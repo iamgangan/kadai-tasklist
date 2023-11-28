@@ -6,7 +6,7 @@
 <c:import url="../layout/app.jsp">
     <c:param name="content">
 
-        <h2>id : <c:out value="${task.id}" />のメッセージ詳細ページ</h2>
+        <h2>id : <c:out value="${task.id}" />のタスク詳細ページ</h2>
 
         <ul>
             <li>
