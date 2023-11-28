@@ -39,8 +39,9 @@ public class ShowServlet extends HttpServlet {
         try {
             id = Integer.parseInt(request.getParameter("id"));
         } catch(NumberFormatException e) {
-            e.printStackTrace();
             em.close();
+            RequestDispatcher rd = request.getRequestDispatcher("/index");
+            rd.forward(request, response);
             return;
         }
 
